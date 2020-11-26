@@ -27,4 +27,4 @@ jobs:
       with:
         java-version: ${{ matrix.version }}
     - name: java -version
-      run: java -version
+      run: java -XX:+UseZST -version
